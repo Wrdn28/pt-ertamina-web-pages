@@ -1,0 +1,152 @@
+:root {
+  --bg-primary: #007bff; /* Biru */
+}
+
+.bg-primary {
+    background-color: var(--bg-primary);
+  }
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+  /* Logo Pertamina */
+  .navbar-logo {
+    height: 40px;
+}
+
+/* Hero Section */
+#beranda {
+  background: url('../img/hero-banner-pertamina.png') center center no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 140px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+/* Tentang Kami */
+#tentang-kami {
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
+#tentang-kami .col-lg-6 h2,
+#tentang-kami .col-lg-6 p {
+  text-align: center;
+  padding-right: 50px;
+}
+
+#tentang-kami .col-lg-6 p {
+    font-size: 17px;
+}
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* layanan section */
+#layanan {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.par-title {
+    font-size: 18px;
+    color: black;
+}
+
+.card-layanan {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    transition: all .2s ease-in;
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-primary);
+    border-radius: 50%;
+    transition: all .1s ease-in;
+}
+
+.card-layanan h3 {
+    font-size: 24px;
+    color: var(--bg-primary);
+    transition: all .1s ease-in;
+}
+
+.card-layanan p {
+    color: #000;
+    font-size: 14px;
+    transition: all .3s ease-in;
+}
+
+/* hover */
+.card-layanan:hover {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.005);
+    background: linear-gradient(160deg, var(--bg-primary), rgb(0, 0, 0));
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover h3,
+.card-layanan:hover p {
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+.circle-icon:hover {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover .circle-icon {
+    background-color: #fff;
+    transition: all .2s ease-in;
+}
+
+#layanan {
+    background-color: aliceblue;
+}
+
+.kontak-text p {
+    font-size: 14px;
+}
+
+#kontak {
+    padding-bottom: 100px;
+    padding-top: 80px;
+}
