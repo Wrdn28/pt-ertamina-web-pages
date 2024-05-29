@@ -1,56 +1,62 @@
 :root {
-  --bg-primary: #007bff; /* Biru */
+    --bg-primary: #007bff;
+    /* Biru */
 }
 
 .bg-primary {
     background-color: var(--bg-primary);
-  }
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-  /* Logo Pertamina */
-  .navbar-logo {
+/* Logo Pertamina */
+.navbar-logo {
     height: 40px;
 }
 
 /* Hero Section */
 #beranda {
-  background: url('../img/hero-banner-pertamina.png') center center no-repeat;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 140px;
-  color: white;
-  margin-bottom: 100px;
+    background: url('../img/hero-banner-pertamina.png') center center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: white;
+    margin-bottom: 70px;
 }
 
 /* Tentang Kami */
 #tentang-kami {
-    padding-bottom: 100px;
-    padding-top: 10px;
+    padding: 50px 0;
+    margin-bottom: 70px;
+    /* Memberikan padding yang seragam di atas dan bawah */
 }
 
 #tentang-kami .col-lg-6 h2,
 #tentang-kami .col-lg-6 p {
-  text-align: center;
-  padding-right: 50px;
+    text-align: center;
+    /* Menjaga teks tetap di tengah */
+    padding: 0 30px;
+    /* Memberikan padding di sisi kanan dan kiri untuk responsivitas */
 }
 
 #tentang-kami .col-lg-6 p {
-    font-size: 17px;
+    font-size: 16px;
+    /* Menyesuaikan ukuran font */
 }
 
 .responsive-iframe-container {
     position: relative;
-    padding-bottom: 50%;
+    padding-bottom: 56.25%;
+    /* Rasio aspek 16:9 */
     height: 0;
     overflow: hidden;
 }
@@ -65,7 +71,8 @@ body {
 
 /* layanan section */
 #layanan {
-    padding: 100px 0;
+    padding: 100px;
+    padding-bottom: 125px;
 }
 
 h2 {
@@ -149,13 +156,39 @@ h2 {
 #kontak {
     padding-bottom: 100px;
     padding-top: 80px;
+    margin-bottom: 70px;
 }
 
-#footer {
-    
-}
+#footer {}
 
 .author {
     padding-top: 50px;
 }
 
+.visi-misi {
+    padding-bottom: 100px;
+}
+
+.button.btn.btn-light.btn-lg:hover {
+    background-color: #007bff;
+    /* Warna primary Bootstrap */
+    color: white;
+    /* Warna teks */
+}
+
+.hero-content {
+    padding-top: 95px;
+}
+
+@media (max-width: 576px) {
+
+    .visi-misi .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-layanan {
+        margin-bottom: 20px;
+    }
+}
